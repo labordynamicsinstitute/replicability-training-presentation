@@ -101,6 +101,8 @@ However, online repositories do provide the ability to make **releases**, provid
 
 > Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). "A template README for social science replication packages." Github. Release  v1.0.0). https://github.com/social-science-data-editors/template_README/releases/tag/v1.0.0. Accessed 2021-07-01.
 
+
+## Data Citation Guidance: Github
 ### Github archived
 
 However, Github is currently unique among online repositories in enabling an automatic integration with [Zenodo](https://zenodo.org) ([making code citable](https://guides.github.com/activities/citable-code/)) 
@@ -119,6 +121,7 @@ Of note: while Github is unique in its automatic integration, any release of an 
 What is a Digital Object Idenfifier?
 
 ![DOI vs URL](images/dcp-doi.png)
+
 ## Digital Object Identifier
 
 - a DOI (e.g. **10.25490/a97f-egyk** or **https://doi.org/10.25490/a97f-egyk**) is a **permanent** identifier, and comes with a commitment by the issuer to preserve the *underlying object* and its *landing page*.
@@ -210,6 +213,8 @@ an organization can be cited as the creator of a dataset:
 > Feenstra, Robert C, Robert Inklaar, and Marcel P Timmer. 2015."The next generation of the Penn World Table." *American Economic Review*, 105(10): 3150-82.
 
 The distributor is the **journal**.
+
+## Who's the Distributor?
 
 ### For data
 
