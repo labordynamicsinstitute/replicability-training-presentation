@@ -348,3 +348,7 @@ knitr::include_url("https://social-science-data-editors.github.io/guidance/addtl
 # The processes
 
 [Next](https://raw.githubusercontent.com/AEADataEditor/fireside-chat-2021/main/Vilhuber-Presentation-2021-01-19.pptx)
+
+# Command line, github
+
+[Command line notes](part4.html)
