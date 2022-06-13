@@ -62,5 +62,5 @@ See [Privacy Policy](https://labordynamicsinstitute.github.io/replicability-trai
 
 # Next up: Reproducible practices
 
-[Reproducible practices](part1a.html)
+[Reproducible practices](part1.html)
 
