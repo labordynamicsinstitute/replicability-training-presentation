@@ -1,0 +1,26 @@
+---
+title: "What will you be doing in the Summer School"
+author: 
+  - "Lars Vilhuber"
+date: "`r Sys.Date()`"
+output: 
+  ioslides_presentation:
+    incremental: false
+    self-included: true
+    widescreen: true
+---
+
+```{r, child=c('toc.md')}
+```
+
+# The Summer School Challenge
+
+- CJE articles using RDC data [link](cje-rdc.html)
+- Other CJE articles
+
+![CJE Dataverse](images/cje-dataverse.png)
+
+# Next up: Toolkit
+
+[Toolkit](part4.html)
+

@@ -1,0 +1,22 @@
+---
+title: "Test article"
+author: 
+  - "Lars Vilhuber"
+date: "`r Sys.Date()`"
+output: 
+  ioslides_presentation:
+    incremental: false
+    self-included: true
+    widescreen: true
+---
+
+```{r, child=c('toc.md')}
+```
+
+# Testing your skillset
+
+## Test case
+
+- "[Manuscript](imperfect_example_pdf.pdf)" 
+- Replication package: [https://github.com/larsvilhuber/testcase](https://github.com/larsvilhuber/testcase)
+- Report template: [https://github.com/AEADataEditor/replication-template](https://github.com/AEADataEditor/replication-template)

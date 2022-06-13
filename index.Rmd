@@ -39,11 +39,11 @@ Part 1:
 
 # Before we start
 
-## Code of Conduct
+## Code of Conduct {.smaller}
 
 - see [full Code of Conduct](https://github.com/labordynamicsinstitute/replicability-training/blob/master/LDI-Replication-Lab-Code-of-Conduct.md)
 
-> We are dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this team, participants accept to abide by LDI ReplicationLab's Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved. Any form of behaviour to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all platforms and events:
+> We are dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this workshop, participants accept to abide by LDI Replication Lab's Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved. Any form of behavior to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all platforms and events:
 
 - Use welcoming and inclusive language
 -  Be respectful of different viewpoints and experiences
@@ -51,16 +51,12 @@ Part 1:
 -  Focus on what is best for the community
 -  Show courtesy and respect towards other community members
 
-If you believe someone is violating the Code of Conduct, we ask that you report it to Cornell University
-
-## Video code of conduct
-
-Specifically, for our many Zoom meetings: [Video Code of Conduct](https://github.com/labordynamicsinstitute/replicability-training/wiki/Videoconferencing-Rules-and-Etiquette)
+If you believe someone is violating the Code of Conduct, we ask that you report it to  Université de Montréal.
 
 ## Privacy
 
 - Your Privacy
-- Privacy of Authors
+- <strike>Privacy of Authors</strike>
 
 See [Privacy Policy](https://labordynamicsinstitute.github.io/replicability-training-curriculum/privacy.html#privacy).
 

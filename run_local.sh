@@ -5,8 +5,8 @@ dockerspace=larsvilhuber
 
 case $USER in
   vilhuber|larsvilhuber)
-  WORKSPACE=$HOME/Workspace/git
-  #WORKSPACE=$PWD
+  #WORKSPACE=$HOME/Workspace/git
+  WORKSPACE=$PWD
   ;;
   codespace)
   WORKSPACE=/workspaces
@@ -33,4 +33,8 @@ DOCKER_BUILDKIT=1 docker build . -t $dockerspace/$repo
 nohup docker push $dockerspace/$repo &
 fi
 
-docker run -e DISABLE_AUTH=true -v $WORKSPACE:/home/rstudio --rm -p 8787:8787 $dockerspace/$repo
+docker run -it\
+ -v $WORKSPACE:/project \
+ -w /project \
+ --rm \
+  $dockerspace/$repo ./_build.sh
