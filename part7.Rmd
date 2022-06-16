@@ -20,3 +20,9 @@ output:
 - "[Manuscript](imperfect_example_pdf.pdf)" 
 - Replication package: [https://github.com/larsvilhuber/testcase](https://github.com/larsvilhuber/testcase)
 - Report template: [https://github.com/AEADataEditor/replication-template](https://github.com/AEADataEditor/replication-template)
+
+
+
+# Next up: Some collected links
+
+[links](part8.html)

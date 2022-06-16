@@ -1,5 +1,5 @@
 ---
-title: "Part 2: Guidance on data citations"
+title: "Part 5: Guidance on data citations"
 author: 
   - "Lars Vilhuber"
 date: "`r Sys.Date()`"
@@ -345,10 +345,9 @@ knitr::include_url("https://social-science-data-editors.github.io/guidance/addtl
 
 ```
 
-# The processes
 
-[Next](https://raw.githubusercontent.com/AEADataEditor/fireside-chat-2021/main/Vilhuber-Presentation-2021-01-19.pptx)
 
-# Command line, github
+# Next up: Writing reports
 
-[Command line notes](part4.html)
+[Writing reports](part6.html)
+

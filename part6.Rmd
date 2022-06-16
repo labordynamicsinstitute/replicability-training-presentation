@@ -26,3 +26,9 @@ output:
 
 - Although you are unlikely to contact the authors, they are likely to read your output. 
 - Review [ACRE guide](https://bitss.github.io/ACRE/comunications.html)
+
+
+
+# Next up: Test article
+
+[Test article](part7.html)

@@ -1,5 +1,5 @@
 ---
-title: "Command Line/Git & Version Control/Markdown/"
+title: "Part 4: Command Line/Git & Version Control/Markdown/"
 author: "Leonel Borja-Plaza"
 date: "January 2022"
 output: slidy_presentation
@@ -160,6 +160,10 @@ Code embedded in the document:
 
 ```
 
+
+# Next up: Data Citations
+
+[Data citations](part5.html)
 
 
 
