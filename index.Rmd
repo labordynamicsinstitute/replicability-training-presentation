@@ -1,5 +1,5 @@
 ---
-title: "Training for LDI Replication Lab"
+title: "Training for CIQSS/QICSS Summer School"
 author: 
   - "Lars Vilhuber"
 date: "`r Sys.Date()`"
@@ -10,57 +10,4 @@ output:
     widescreen: true
 ---
 
-```{r, child=c('toc.md')}
-```
-
-## Overview
-
-::: {.columns-2}
-
-:::: {.column}
-
-Part 1:
-
-- Reproducible practices
-- The role of the template README
-
-::::
-
-:::: {.column}
-
-- Ideal directory and data structure
-- Some programming practices
-
-
-::::
-
-:::
-
-
-# Before we start
-
-## Code of Conduct {.smaller}
-
-- see [full Code of Conduct](https://github.com/labordynamicsinstitute/replicability-training/blob/master/LDI-Replication-Lab-Code-of-Conduct.md)
-
-> We are dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this workshop, participants accept to abide by LDI Replication Lab's Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved. Any form of behavior to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all platforms and events:
-
-- Use welcoming and inclusive language
--  Be respectful of different viewpoints and experiences
--  Gracefully accept constructive criticism
--  Focus on what is best for the community
--  Show courtesy and respect towards other community members
-
-If you believe someone is violating the Code of Conduct, we ask that you report it to  Université de Montréal.
-
-## Privacy
-
-- Your Privacy
-- <strike>Privacy of Authors</strike>
-
-See [Privacy Policy](https://labordynamicsinstitute.github.io/replicability-training-curriculum/privacy.html#privacy).
-
-# Next up: Reproducible practices
-
-[Reproducible practices](part1.html)
-
+Please see [the newer site](https://labordynamicsinstitute.github.io/replicability-training-presentation-qicss/)
