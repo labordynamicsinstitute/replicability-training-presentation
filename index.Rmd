@@ -1,5 +1,5 @@
 ---
-title: "Training for CIQSS/QICSS Replication Challenge"
+title: "Training for CIQSS/QICSS Summer School"
 author: 
   - "Lars Vilhuber"
 date: "`r Sys.Date()`"
