@@ -2,7 +2,7 @@
 title: "Training for LDI Replication Lab"
 author: 
   - "Lars Vilhuber"
-date: "`r Sys.Date()`"
+date: May 2022
 output: 
   ioslides_presentation:
     incremental: false
