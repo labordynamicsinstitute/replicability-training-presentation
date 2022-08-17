@@ -1,4 +1,4 @@
-## The Plan
+## The Plan {.smaller}
 
 
 | Time  |  August 17, 2022     (Room 109)                           |
