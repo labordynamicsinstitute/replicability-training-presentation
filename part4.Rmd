@@ -9,66 +9,72 @@ output: slidy_presentation
 
 ## Command Line
 
-This slide is based on the [carpentries on the unix shell](https://swcarpentry.github.io/shell-novice/01-intro/index.html)
+This slide is based on the [Carpentries tutorial on the Unix shell](https://swcarpentry.github.io/shell-novice/01-intro/index.html) (which you might want to do on your own).
 
 - What is a command line and why use it?
-  - Graphical user interface are the most common way to give instruction to our computers. They are not good when we need to scale thing up, do repetitive tasks, or have people reproduce instructions across systems.
+  - Graphical user interfaces are the most common way to give instruction to our computers. They are not good when we need to scale things up, do repetitive tasks, or have people reproduce instructions across systems.
   - Command-line interface are another way to pass instructions to computers. 
   - "Shell" instructions can be scripted, allowing repetitive tasks to be done automatically and fast.
 
 ## Commands in the Unix Shell
 
-  - list things
+  - list files
 
 ```
 $ ls
 ```
 - moving around 
-  - where are we 
+  - where are we (`pwd` = present working directory)
 
 ```
 $ pwd
 ```
- - change to where we want to be 
-
-```
-$ cd /somepath 
-$ cd ..
-$ cd ./somepath
-```
 - Create directories
 
 ```
-$ mkdir 
+$ mkdir somepath
 ```
-- Move files 
+ - change to where we want to be 
 
 ```
-$ mv /currentpath /otherpath
+$ cd somepath 
+$ pwd
+$ cd ..
+$ cd ./somepath
+$ pwd
 ```
-- Copy files
+
+- Move or rename files 
 
 ```
-$ cp /currentpath /otherpath
+$ mv somepath otherpath
+```
+- Copy (`cp`) files
+
+```
+$ cp test.do otherpath/
 ```
 
-- Remove files
+- Remove (`rm`) files
 
 ```
-$ rm filename
+$ rm filename.do
 ```
 
 ## Git 
 
-Version Control system. Track the progress in a project: what changes?, who made changes? [again see the carpentries](https://swcarpentry.github.io/git-novice/01-basics/index.html)
+Version Control system. Track the progress in a project: what changes?, who made changes? [Again see the Carpentries tutorial](https://swcarpentry.github.io/git-novice/01-basics/index.html)
 
 ### Git and the command line 
 
 - Clone a repository
 
 ```
-git clone
+git clone https://github.com/labordynamicsinstitute/prettygood-example
 ```
+
+(don't forget to change directory)
+
 - Check where my local repository is vs. remote repository
 
 ```
@@ -84,7 +90,8 @@ git pull
 - after making changes, how to reflect them in the external repository.
 
 ```
-git add /thefileyoucreated/ormodified
+git add otherpath/fileimodified.do
+git add otherpath/fileicreated.do
 git commit -m "you write here a commit message"
 git push
 ```

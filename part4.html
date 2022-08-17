@@ -34,11 +34,11 @@ Leonel Borja-Plaza
 </div>
 <div id="command-line" class="slide section level2">
 <h1>Command Line</h1>
-<p>This slide is based on the <a href="https://swcarpentry.github.io/shell-novice/01-intro/index.html">carpentries on the unix shell</a></p>
+<p>This slide is based on the <a href="https://swcarpentry.github.io/shell-novice/01-intro/index.html">Carpentries tutorial on the Unix shell</a> (which you might want to do on your own).</p>
 <ul>
 <li>What is a command line and why use it?
 <ul>
-<li>Graphical user interface are the most common way to give instruction to our computers. They are not good when we need to scale thing up, do repetitive tasks, or have people reproduce instructions across systems.</li>
+<li>Graphical user interfaces are the most common way to give instruction to our computers. They are not good when we need to scale things up, do repetitive tasks, or have people reproduce instructions across systems.</li>
 <li>Command-line interface are another way to pass instructions to computers.</li>
 <li>“Shell” instructions can be scripted, allowing repetitive tasks to be done automatically and fast.</li>
 </ul></li>
@@ -47,47 +47,50 @@ Leonel Borja-Plaza
 <div id="commands-in-the-unix-shell" class="slide section level2">
 <h1>Commands in the Unix Shell</h1>
 <ul>
-<li>list things</li>
+<li>list files</li>
 </ul>
 <pre><code>$ ls</code></pre>
 <ul>
 <li>moving around
 <ul>
-<li>where are we</li>
+<li>where are we (<code>pwd</code> = present working directory)</li>
 </ul></li>
 </ul>
 <pre><code>$ pwd</code></pre>
 <ul>
-<li>change to where we want to be</li>
-</ul>
-<pre><code>$ cd /somepath 
-$ cd ..
-$ cd ./somepath</code></pre>
-<ul>
 <li>Create directories</li>
 </ul>
-<pre><code>$ mkdir </code></pre>
+<pre><code>$ mkdir somepath</code></pre>
 <ul>
-<li>Move files</li>
+<li>change to where we want to be</li>
 </ul>
-<pre><code>$ mv /currentpath /otherpath</code></pre>
+<pre><code>$ cd somepath 
+$ pwd
+$ cd ..
+$ cd ./somepath
+$ pwd</code></pre>
 <ul>
-<li>Copy files</li>
+<li>Move or rename files</li>
 </ul>
-<pre><code>$ cp /currentpath /otherpath</code></pre>
+<pre><code>$ mv somepath otherpath</code></pre>
 <ul>
-<li>Remove files</li>
+<li>Copy (<code>cp</code>) files</li>
 </ul>
-<pre><code>$ rm filename</code></pre>
+<pre><code>$ cp test.do otherpath/</code></pre>
+<ul>
+<li>Remove (<code>rm</code>) files</li>
+</ul>
+<pre><code>$ rm filename.do</code></pre>
 </div>
 <div id="git" class="slide section level2">
 <h1>Git</h1>
-<p>Version Control system. Track the progress in a project: what changes?, who made changes? <a href="https://swcarpentry.github.io/git-novice/01-basics/index.html">again see the carpentries</a></p>
+<p>Version Control system. Track the progress in a project: what changes?, who made changes? <a href="https://swcarpentry.github.io/git-novice/01-basics/index.html">Again see the Carpentries tutorial</a></p>
 <h3 id="git-and-the-command-line">Git and the command line</h3>
 <ul>
 <li>Clone a repository</li>
 </ul>
-<pre><code>git clone</code></pre>
+<pre><code>git clone https://github.com/labordynamicsinstitute/prettygood-example</code></pre>
+<p>(don’t forget to change directory)</p>
 <ul>
 <li>Check where my local repository is vs. remote repository</li>
 </ul>
@@ -99,7 +102,8 @@ $ cd ./somepath</code></pre>
 <ul>
 <li>after making changes, how to reflect them in the external repository.</li>
 </ul>
-<pre><code>git add /thefileyoucreated/ormodified
+<pre><code>git add otherpath/fileimodified.do
+git add otherpath/fileicreated.do
 git commit -m &quot;you write here a commit message&quot;
 git push</code></pre>
 </div>
