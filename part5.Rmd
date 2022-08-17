@@ -1,0 +1,145 @@
+---
+title: "Stata Training"
+author: "Linda Wang"
+date: '2022-08-16'
+output: slidy_presentation
+---
+
+# How to Run Stata Code
+
+##
+
+These slides are based on [Appendix F in the training curriculum](https://labordynamicsinstitute.github.io/replicability-training-curriculum/stata-related-procedures.html)
+
+## config.do
+
+![](images/stata_config.png)
+
+## config.do
+
+### Area 1
+
+- Sets file paths.
+- Creates a sub-directory to save logs in, if necessary.
+- There will be no effect in cases where the authors create their own log files, so do not comment this area out.
+
+### Area 2
+
+- Creates a log file each time you run the code.
+- Labels log files with the timestamp of the current run.
+
+### Area 4
+
+- Provides information about the system the code is run on, for the replication package.
+
+### Area 4
+
+- Sets file path for packages.
+- Installs Stata packages needed for replication.
+- You will need to add package names to line 55. (Use line 56 as an example).
+
+##
+
+- If there is no master.do file, add ` include config.do` at the beginning and ` log close _all` at the end.
+- If there is a master.do file, add the lines to it, only.
+
+## master.do
+
+If the authors do not provide a master .do, but the order in which each program is run is clear (either from file names or from the README), then create a master.do as follows:
+
+![](images/doeditor.png)
+
+##
+
+![](images/doeditor2.png)
+
+##
+
+- Add ` include config.do` for the first line and ` log close _all` for the last line.
+- For each program that needs to be run, write ` do` and the path. Make sure these lines are in the right sequence.
+
+```
+include "config.do"
+ 
+* Assuming scenario "A"
+
+do "${rootdir}/code/0_first_program.do" 
+do "${rootdir}/code/1_second_program.do"
+do "${rootdir}/code/2_third_program.do"
+do "${rootdir}/code/appendix_code/appendix.do"
+
+log close _all
+
+```
+
+##
+
+![](images/master-example.png)
+
+##
+
+![](images/code_repo.png)
+
+## Modifying File Paths
+
+- Varies depending on the replication package.
+- Typically will require one modification to either the master .do file or to a program called by the master .do file. 
+
+Before:
+
+```
+*/ This is Master do file /*
+
+global maindir "C:\Users\Author\Dropbox\Project1" // this is the path to the repository
+global data "$maindir/data" // path to data folder
+global figures "$maindir/figures" // path to figures folder
+```
+
+After:
+
+```
+include "config.do"
+
+*/ This is Master do file /*
+
+global maindir "$rootdir" // this is the path to the repository
+global data "$maindir/data" // path to data folder
+global figures "$maindir/figures" // path to figures folder
+```
+
+##
+
+- The config .do file has a parameter called `scenario` that is set to `A` by default.
+- `A` indicates the case where the master .do file is in a subfolder of the root directory.
+- `B` indicates the case where the master .do file is in the root directory. Change the default if needed.
+
+Scenario A
+
+```
+ directory/
+              code/
+                 main.do
+                 01_dosomething.do
+              data/
+                 data.dta
+                 otherdata.dta
+
+```
+
+Scenario B
+
+```
+ directory/
+        main.do
+        scripts/
+             01_dosomething.do
+        data/
+             data.dta
+             otherdata.dta
+```
+
+## Running the Code
+
+- Right click on the master .do file and select the option `Execute (do)`. This will set the working directory location to the location where the master .do file is, automatically.
+
+![](images/execute-do.png)
