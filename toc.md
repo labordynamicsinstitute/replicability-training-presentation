@@ -11,5 +11,5 @@
 | 14:00 |  **[Command line/Git/Markdown/Version control](part4.html)**                    |
 | 15:00 |  **[A prototypical replication report](https://github.com/AEADataEditor/replication-template/blob/master/REPLICATION.md)**                        |
 | 16:00 |  **[A walkthrough of the workflow for unpublished articles](https://labordynamicsinstitute.github.io/replicability-training-curriculum/aea-jira-workflow-a-guide.html)** |
-| 17:00 | **How to run Stata code** |
+| 17:00 | **[How to run Stata code](part5.html)** |
 | 18:00 | End                           |
