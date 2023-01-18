@@ -166,6 +166,30 @@ Scenario B
 
 ![](images/execute-do.png)
 
+
+##
+
+- To run Stata on Git Bash from CISER, use the following command (note that relative paths can also be used):
+
+```
+"C:/Program Files/Stata17/StataMP-64.exe" -b do "U:/test/master.do"
+```
+
+- To run Stata on Powershell on Windows (e.g. personal laptop), use the following command:
+
+```
+'C:\Program Files\Stata16\StataMP-64.exe' /b do .\master.do
+```
+
+- To run Stata on Linux/MacOS, use the following command:
+
+```
+stata-mp -b do master.do
+```
+
+- Note that relative file paths to the .do file can also be used.
+
+
 ## Missing Package(s)
 
 - Typically indicated in error messages, e.g. ``command not found`` or ``type ssc install``, and can be resolved through modifications to config.do.
