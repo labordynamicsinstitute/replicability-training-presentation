@@ -1,7 +1,7 @@
 ---
 title: "Stata Training"
 author: "Linda Wang"
-date: '2022-08-16'
+date: 'January 2023'
 output: slidy_presentation
 ---
 
@@ -9,13 +9,24 @@ output: slidy_presentation
 
 ##
 
-These slides are based on [Appendix F in the training curriculum](https://labordynamicsinstitute.github.io/replicability-training-curriculum/stata-related-procedures.html)
+These slides are based on the [Stata-related procedures](https://labordynamicsinstitute.github.io/replicability-training-manual-new/96-00-using-Stata.html) section of the training manual.
 
 ## config.do
 
 ![](images/stata_config.png)
 
-## config.do
+
+## Purpose
+
+- Generate log files.
+- Install programs.
+
+## Set up
+
+- Rename template-config.do and place it in the same directory as the .do file(s) you will run.
+- Add lines to the file(s) so that they execute config.do when run. To clarify:
+  - If there is no master.do file, add ` include config.do` at the beginning and ` log close _all` at the end of the .do file(s) you will run.
+  - If there is a master.do file, add the lines to it, only.
 
 ### Area 1
 
@@ -28,7 +39,7 @@ These slides are based on [Appendix F in the training curriculum](https://labord
 - Creates a log file each time you run the code.
 - Labels log files with the timestamp of the current run.
 
-### Area 4
+### Area 3
 
 - Provides information about the system the code is run on, for the replication package.
 
@@ -38,10 +49,6 @@ These slides are based on [Appendix F in the training curriculum](https://labord
 - Installs Stata packages needed for replication.
 - You will need to add package names to line 55. (Use line 56 as an example).
 
-##
-
-- If there is no master.do file, add ` include config.do` at the beginning and ` log close _all` at the end.
-- If there is a master.do file, add the lines to it, only.
 
 ## master.do
 
@@ -80,9 +87,11 @@ log close _all
 
 ![](images/code_repo.png)
 
+## General Stata Tips
+
+
 ## Modifying File Paths
 
-- Varies depending on the replication package.
 - Typically will require one modification to either the master .do file or to a program called by the master .do file. 
 
 Before:
@@ -109,9 +118,22 @@ global figures "$maindir/figures" // path to figures folder
 
 ##
 
-- The config .do file has a parameter called `scenario` that is set to `A` by default.
-- `A` indicates the case where the master .do file is in a subfolder of the root directory.
-- `B` indicates the case where the master .do file is in the root directory. Change the default if needed.
+- Certain errors may indicate that a subdirectory is missing. If the programs/README/other documentation verify this, then you should create the missing directories.
+
+E.g.
+
+```
+log using "${path}\Output\maindata.log", replace
+(file U:\AEAworkspace\aearep-3835\182763\Output\maindata.log not found)
+file U:\AEAworkspace\aearep-3835\182763\Output\maindata.log could not be opened
+r(603)
+```
+
+##
+
+- Also note that the config .do file has a parameter called `scenario` that is set to `A` by default.
+  - `A` indicates the case where the master .do file is in a subfolder of the root directory.
+  - `B` indicates the case where the master .do file is in the root directory. Change the default if needed.
 
 Scenario A
 
@@ -143,3 +165,9 @@ Scenario B
 - Right click on the master .do file and select the option `Execute (do)`. This will set the working directory location to the location where the master .do file is, automatically.
 
 ![](images/execute-do.png)
+
+## Missing Package(s)
+
+- Typically indicated in error messages, e.g. ``command not found`` or ``type ssc install``, and can be resolved through modifications to config.do.
+- Note that the potentially missing packages flagged by scan_packages.do may be generating some of these errors.
+  - As a reminder, don't add those flagged packages to config.do before running code for the first time. (An exception would be if the README indicates long runtimes.)

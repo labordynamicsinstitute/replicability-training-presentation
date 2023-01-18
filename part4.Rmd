@@ -1,7 +1,7 @@
 ---
 title: "Command Line/Git & Version Control/Markdown/"
-author: "Leonel Borja-Plaza"
-date: "January 2022"
+author: "Linda Wang"
+date: "January 2023"
 output: slidy_presentation
 ---
 
