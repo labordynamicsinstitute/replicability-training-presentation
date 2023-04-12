@@ -9,7 +9,7 @@ output: slidy_presentation
 
 ##
 
-These slides are based on the [Stata-related procedures](https://labordynamicsinstitute.github.io/replicability-training-manual-new/96-00-using-Stata.html) section of the training manual.
+These slides are based on the [Stata-related procedures](https://labordynamicsinstitute.github.io/ldilab-manual/96-00-using-Stata.html) section of the training manual.
 
 ## config.do
 
@@ -25,7 +25,7 @@ These slides are based on the [Stata-related procedures](https://labordynamicsin
 
 - Rename template-config.do and place it in the same directory as the .do file(s) you will run.
 - Add lines to the file(s) so that they execute config.do when run. To clarify:
-  - If there is no master.do file, add ` include config.do` at the beginning and ` log close _all` at the end of the .do file(s) you will run.
+  - If there is no master.do file, add `include config.do` at the beginning and `log close _all` at the end of the .do file(s) you will run.
   - If there is a master.do file, add the lines to it, only.
 
 ### Area 1
@@ -62,8 +62,8 @@ If the authors do not provide a master .do, but the order in which each program 
 
 ##
 
-- Add ` include config.do` for the first line and ` log close _all` for the last line.
-- For each program that needs to be run, write ` do` and the path. Make sure these lines are in the right sequence.
+- Add `include config.do` for the first line and `log close _all` for the last line.
+- For each program that needs to be run, write `do` and the path. Make sure these lines are in the right sequence.
 
 ```
 include "config.do"
@@ -193,5 +193,5 @@ stata-mp -b do master.do
 ## Missing Package(s)
 
 - Typically indicated in error messages, e.g. ``command not found`` or ``type ssc install``, and can be resolved through modifications to config.do.
-- Note that the potentially missing packages flagged by scan_packages.do may be generating some of these errors.
-  - As a reminder, don't add those flagged packages to config.do before running code for the first time. (An exception would be if the README indicates long runtimes.)
+- Note that the potentially missing packages flagged by `scan_packages.do` may be generating some of these errors.
+  - As a reminder, don't add those flagged packages to `config.do` before running code for the first time. (An exception would be if the README indicates long runtimes.)
