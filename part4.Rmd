@@ -1,7 +1,7 @@
 ---
 title: "Command Line/Git & Version Control/Markdown/"
 author: "Linda Wang"
-date: "January 2023"
+date: "April 2023"
 output: slidy_presentation
 ---
 
@@ -13,7 +13,7 @@ This slide is based on the [Carpentries tutorial on the Unix shell](https://swca
 
 - What is a command line and why use it?
   - Graphical user interfaces are the most common way to give instruction to our computers. They are not good when we need to scale things up, do repetitive tasks, or have people reproduce instructions across systems.
-  - Command-line interface are another way to pass instructions to computers. 
+  - Command-line interfaces are another way to pass instructions to computers. 
   - "Shell" instructions can be scripted, allowing repetitive tasks to be done automatically and fast.
 
 ## Commands in the Unix Shell
@@ -167,7 +167,37 @@ Code embedded in the document:
 
 ```
 
+#### Spacing
 
+- Be sure to leave an empty line after a header.
+
+```
+### Bad example
+#### U.S.Census Population Division
+- Retrieved from https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html
+```
+
+```
+### Good example
+#### U.S.Census Population Division
+
+- Retrieved from https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html
+```
+
+- Leave an empty line if you want to start a new paragraph.
+```
+Bad example:
+Thank you for your replication archive.Blablabla.
+**Conditional on making the requested changes to the manuscript and the openICPSR deposit prior to publication, the replication package is accepted.**
+```
+```
+Good example:
+
+Thank you for your replication archive. Blablabla.
+
+**Conditional on making the requested changes to the manuscript and the openICPSR deposit prior to publication, the replication package is accepted.**
+
+```
 
 
 
