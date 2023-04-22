@@ -1,7 +1,7 @@
 ---
 title: "Stata Training"
 author: "Linda Wang"
-date: 'January 2023'
+date: 'April 2023'
 output: slidy_presentation
 ---
 
@@ -13,7 +13,9 @@ These slides are based on the [Stata-related procedures](https://labordynamicsin
 
 ## config.do
 
-![](images/stata_config.png)
+![](images/stata_config_new.png)
+![](images/stata_config_new_2.png)
+![](images/stata_config_new_3.png)
 
 
 ## Purpose
@@ -28,27 +30,31 @@ These slides are based on the [Stata-related procedures](https://labordynamicsin
   - If there is no master.do file, add `include config.do` at the beginning and `log close _all` at the end of the .do file(s) you will run.
   - If there is a master.do file, add the lines to it, only.
 
-### Area 1
 
-- Sets file paths.
+### Walkthrough
+
+#### Package Installation
+
+- Indicates the structure of the code.
+- Installs Stata packages needed for replication.
+- You will need to add package names to line 50. (Use line 52 as an example).
+
+#### Present/Working Directory Set Up
+
+- Sets file path to root directory (based on the structure indicated previously).
 - Creates a sub-directory to save logs in, if necessary.
-- There will be no effect in cases where the authors create their own log files, so do not comment this area out.
+- Keep this area even if authors' code also produces log files.
 
-### Area 2
-
-- Creates a log file each time you run the code.
-- Labels log files with the timestamp of the current run.
-
-### Area 3
+#### Diagnostics
 
 - Provides information about the system the code is run on, for the replication package.
 
-### Area 4
+#### Other
 
-- Sets file path for packages.
-- Installs Stata packages needed for replication.
-- You will need to add package names to line 55. (Use line 56 as an example).
-
+- Includes lines for specific cases, e.g.
+  - Net installation of packages
+  - mata
+  - S drive path set up
 
 ## master.do
 
