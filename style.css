@@ -44,4 +44,9 @@ background-color:#c0cbf87d;
     .warning {
       background-color: #f5b3b8;
     }
+
+#author {
+      background-color: rgba(0, 0, 255, 0.24);
+    }
+    
 /* end of customizations */
