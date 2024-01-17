@@ -38,23 +38,28 @@ Part 1:
 
 # Reproducible practices
 
-## Version your code and your results
+## Version  code and  results
 
-- Use versioning
-- If available, use `git`
-  - If not available, request `git`
-  - If not, use regular backups (scripted, automated)
+While we are assessing reproducibility of others, our work must be reproducible as well.
+
+- Use versioning. We will  use `git`. We will show you how.
+- Keep a log of your work 
+  - Git will log some things
+  - You will keep a high-level log (notes) of your work in the report (`REPLICATION.md`)
+- Commit often (at least once a day)
   
 # Part 1 | Ideal structure
 
+## What do we tell researchers?
+
+Here's a few generic guidelines for researchers. You will be on the lookout for these things!
+
 ## Generic project setup
 
-
 ![TIER protocol](images/tier-protocol.png)
-
 [TIER Protocol](https://www.projecttier.org/tier-protocol/specifications-3-0/)
 
-## Basic project setup
+## Basic project setup {#user}
 
 ::: {.columns-2}
 
@@ -83,7 +88,7 @@ Part 1:
 
 :::
 
-## Project setup examples
+## Project setup examples {#user}
 
 
 ::: {.columns-2}
@@ -118,20 +123,20 @@ It doesn't really matter, as long as it is logical. We will get to how this tran
 
 # Computational Empathy
 
-## Consider how the next person will (be able to) compute
+## Consider how the next person will (be able to) compute {#user}
 
 - You don't know who that is
-- You don’t know what they don’t know
+- You don't know what they don't know
 - Will not have any of your add-on packages/ libraries/ etc. pre-installed
-- Don’t force them to do tedious things
+- Don't force them to do tedious things
 
 **It might be "Future You!"**
 
-## It *IS* you
+## It *IS* you {#user}
 
 The replicator is the first (?) reader of the instructions who will need to reproduce the analysis.
 
-## Streamlining
+## Streamlining {#user}
 
 - Master script preferred
   - Least amount of manual effort
@@ -142,7 +147,7 @@ The replicator is the first (?) reader of the instructions who will need to repr
 - No manual install of packages
   - Use a script to create all directories, install all necessary packages/requirements/etc.
 
-## Reproducibility
+## Reproducibility {#user}
 
 - No manual manipulation 
   - “Change the parameter to 0.2, then run the code again”
@@ -153,7 +158,7 @@ The replicator is the first (?) reader of the instructions who will need to repr
   - No manual calculation of numbers
 - Use cross-platform programming practices
 
-## Cross-platform programming practices 1
+## Cross-platform programming practices 1 {#user}
 
 **Use programming-language specific code as much as possible**
 
@@ -167,7 +172,7 @@ shell unzip "C:\data\myfile.zip"
 ```
 
 
-## Cross-platform programming practices 1
+## Cross-platform programming practices 1  {#user}
 
 Most languages have appropriate code:
 
@@ -186,7 +191,7 @@ unzipfile "zipfile.zip" [, replace]
 ```
 
 
-## Cross-platform programming practices 2
+## Cross-platform programming practices 2 {#user}
 
 Use neutral pathnames (mostly forward slashes)
 
