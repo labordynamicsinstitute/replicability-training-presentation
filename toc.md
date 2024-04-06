@@ -1,7 +1,7 @@
 ## The Plan {.smaller}
 
 
-| Time  |  January 16, 2024     (Room Ives 217)                           |
+| Time  |  April 6, 2024                                |
 |-------|-----------------------------------------------------------|
 |  8:00 | Breakfast  |
 |  9:00 |  **Introduction**      |
@@ -10,7 +10,7 @@
 | 12:00 |  Lunch Break                                               |
 | 13:00 |  **What will you be doing in the Lab**                    |
 | 14:00 |  **[Command line/Git/Markdown/Version control](part4.html)**                      |
-| 15:00 |  **[A prototypical replication report](https://larsvilhuber.github.io/ldilab-manual/08-details-replication-report.html)**                         |
-| 16:00 | **[A walkthrough of the workflow](https://larsvilhuber.github.io/ldilab-manual/11-00-jira-workflow.html)**|
+| 15:00 |  **[A prototypical replication report](https://labordynamicsinstitute.github.io/ldilab-manual/08-details-replication-report.html)**                         |
+| 16:00 | **[A walkthrough of the workflow](https://labordynamicsinstitute.github.io/ldilab-manual/11-00-jira-workflow.html)**|
 | 17:00 | **[How to run Stata code](part5.html)** |
 | 18:00 | End                           |
