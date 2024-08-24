@@ -2,7 +2,7 @@
 title: "Training for LDI Replication Lab"
 author: 
   - "Lars Vilhuber"
-date: April 2024
+date: August 2024
 output: 
   ioslides_presentation:
     incremental: false
