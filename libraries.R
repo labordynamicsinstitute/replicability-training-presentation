@@ -46,5 +46,8 @@ results <- sapply(as.list(global.libraries), pkgTest)
 
 # webshot extra config
 
+if (webshot::is_phantomjs_installed()) {
+	message("PhantomJS already installed")
+	} else {
 webshot::install_phantomjs()
-
+}
