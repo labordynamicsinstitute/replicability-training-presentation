@@ -352,3 +352,6 @@ knitr::include_url("https://social-science-data-editors.github.io/guidance/addtl
 # Command line, github
 
 [Command line notes](part4.html)
+
+```{r, child=c('toc.md')}
+```
