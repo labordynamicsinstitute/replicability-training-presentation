@@ -2,8 +2,17 @@
 title: "Command Line/Git & Version Control/Markdown/"
 author: "Linda Wang"
 date: "April 2023"
-output: slidy_presentation
+output: 
+  ioslides_presentation:
+    incremental: false
+    css: style.css
+    self-included: true
+    widescreen: true
 ---
+
+```{r, child=c('toc.md')}
+```
+
 
 # Command Line/Git & Version Control/Markdown/
 
@@ -197,6 +206,11 @@ Thank you for your replication archive. Blablabla.
 
 **Conditional on making the requested changes to the manuscript and the openICPSR deposit prior to publication, the replication package is accepted.**
 
+```
+
+
+
+```{r, child=c('toc.md')}
 ```
 
 
