@@ -39,7 +39,7 @@ Part 1:
 
 # Template README
 
-## Published in December 2020 {.smaller}
+## V1.1 Published in November 2022 {.smaller}
 
 ```{r readmeweb,echo=FALSE}
 
