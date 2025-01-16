@@ -38,11 +38,16 @@ $ ls
 ```
 $ pwd
 ```
+
+## Commands in the Unix Shell
+
 - Create directories
 
 ```
 $ mkdir somepath
 ```
+## Commands in the Unix Shell
+
  - change to where we want to be 
 
 ```
@@ -52,6 +57,8 @@ $ cd ..
 $ cd ./somepath
 $ pwd
 ```
+
+## Commands in the Unix Shell
 
 - Move or rename files 
 
@@ -64,6 +71,8 @@ $ mv somepath otherpath
 $ cp test.do otherpath/
 ```
 
+## Commands in the Unix Shell
+
 - Remove (`rm`) files
 
 ```
@@ -74,7 +83,7 @@ $ rm filename.do
 
 Version Control system. Track the progress in a project: what changes?, who made changes? [Again see the Carpentries tutorial](https://swcarpentry.github.io/git-novice/01-basics/index.html)
 
-### Git and the command line 
+## Git and the command line 
 
 - Clone a repository
 
@@ -90,11 +99,15 @@ git clone https://github.com/labordynamicsinstitute/prettygood-example
 git status
 ```
 
+## Git and the command line 
+
 - Get the current version of an existing repository
 
 ```
 git pull
 ```
+
+## Git and the command line 
 
 - after making changes, how to reflect them in the external repository.
 
@@ -106,13 +119,14 @@ git push
 ```
 
 ## Markdown 
-We use Markdowns to write reports. [why?](https://carto.com/blog/why-we-use-markdown/)  
+
+We use Markdown to write reports. [why?](https://carto.com/blog/why-we-use-markdown/)  
 
 - It's easy, fast, multi-platform, and it works great.
 
-### Basic Syntax(https://www.markdownguide.org/basic-syntax/)
+## Basic Syntax (https://www.markdownguide.org/basic-syntax/)
 
-#### Headings
+### Headings
 
 ```
 # Heading level 1
@@ -120,17 +134,13 @@ We use Markdowns to write reports. [why?](https://carto.com/blog/why-we-use-mark
 ### Heading level 3
 #### Heading level 4
 ##### Heading level 5
-
-Heading level 1
-===============
-
-Heading level 2
----------------
-
 ```
-#### Lists
 
-##### Ordered lists
+---
+
+### Lists
+
+#### Ordered lists
 
 ```
 1. First item
@@ -139,10 +149,13 @@ Heading level 2
     1. Indented item
     2. Indented item
 4. Fourth item 
-
-
 ```
-##### Unordered lists
+
+---
+
+### Lists
+
+#### Unordered lists
 
 ```
 - First item
@@ -154,7 +167,9 @@ Heading level 2
 
 ```
 
-#### Blockquotes and Code Blocks
+---
+
+### Blockquotes and Code Blocks
 - Blockquotes
 
 > This is a block quote, and it is created like this
@@ -163,6 +178,10 @@ Heading level 2
 > This is a block quote, and it is created like this
 
 ```
+
+---
+
+### Blockquotes and Code Blocks
 
 - Code Block
 
@@ -176,7 +195,9 @@ Code embedded in the document:
 
 ```
 
-#### Spacing
+---
+
+### Spacing
 
 - Be sure to leave an empty line after a header.
 
@@ -186,12 +207,21 @@ Code embedded in the document:
 - Retrieved from https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html
 ```
 
+---
+
+### Spacing
+
 ```
 ### Good example
+
 #### U.S.Census Population Division
 
 - Retrieved from https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html
 ```
+
+---
+
+### Spacing
 
 - Leave an empty line if you want to start a new paragraph.
 ```
