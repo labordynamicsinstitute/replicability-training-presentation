@@ -6,9 +6,11 @@
 |  8:00 | Breakfast  |
 |  9:00 |  **Introduction**      |
 | 10:00 |  **[Reproducible practices](part1a.html)**, **[A template README](part1b.html)**        |
+| 10:50 | Coffee break | 
 | 11:00 | **[Data provenance, data citations](part2.html)**  |
 | 12:00 |  Lunch Break                                               |
 | 13:00 |  **What will you be doing in the Lab**                    |
+| 13:30 | [Tech break](https://labordynamicsinstitute.github.io/ldilab-manual/91-setup-checklist.html) |
 | 14:00 |  **[Command line/Git/Markdown/Version control](part4.html)**                      |
 | 15:00 |  **[A prototypical replication report](https://labordynamicsinstitute.github.io/ldilab-manual/08-details-replication-report.html)**                         |
 | 16:00 | **[A walkthrough of the workflow](https://labordynamicsinstitute.github.io/ldilab-manual/11-00-jira-workflow.html)**|

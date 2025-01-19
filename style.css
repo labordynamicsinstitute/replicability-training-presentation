@@ -48,5 +48,10 @@ background-color:#c0cbf87d;
 #author {
       background-color: rgba(0, 0, 255, 0.24);
     }
+
     
+
+.reveal .slides{
+    width: 90% !important;  /* or other width */
+}
 /* end of customizations */
