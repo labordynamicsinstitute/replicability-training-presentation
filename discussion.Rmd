@@ -24,5 +24,8 @@ output:
 
 ## Getting help
 
+- The manual <https://labordynamicsinstitute.github.io/ldilab-manual/>
+- The mailing list [ldi-lab-l@list.cornell.edu](mailto:ldi-lab-l@list.cornell.edu)
+
 ```{r, child=c('toc2.md')}
 ```
