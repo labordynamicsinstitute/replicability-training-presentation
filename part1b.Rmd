@@ -240,6 +240,10 @@ You will need to find the information.
 
 After lunch, we will talk about the report you will prepare.
 
+```{r, child=c('coffee.md')}
+```
+
+
 # Data Citations
 
 [Next](part2.html)

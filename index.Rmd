@@ -13,6 +13,17 @@ output:
 ```{r, child=c('toc.md')}
 ```
 
+
+# Before we start
+
+## Survey!
+
+<img src="images/aeaintern-400.png" style="width: 400px; float: right; margin: 10px;"/>
+
+[https://tinyurl.com/aeaintern](https://tinyurl.com/aeaintern)
+
+# Overview
+
 ## Overview   {.columns-2}
 
 
@@ -63,14 +74,6 @@ output:
 <img src="images/IMG_20190615_075226.jpg" style="width: 700px; float: right; margin: 10px;" />
 
 
-
-# Before we start
-
-## Survey!
-
-<img src="images/aeaintern-400.png" style="width: 400px; float: right; margin: 10px;"/>
-
-[https://tinyurl.com/aeaintern](https://tinyurl.com/aeaintern)
 
 
 ## Code of Conduct {.smaller}
