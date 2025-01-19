@@ -1,0 +1,28 @@
+---
+title: "Discussion break"
+output: 
+  ioslides_presentation:
+    incremental: false
+    self-included: true
+    widescreen: true
+---
+
+
+# Confused {.flexbox .vcenter}
+
+<img src="images/confused-hands-up-unsure-48a8dbc4f50d1206a1ea1d9cb3471470.jpg" style="width: 700px; float: right; margin: 10px;" />[^creditperplex]
+
+[^creditperplex]:  <https://www.pickpik.com/confused-hands-up-unsure-perplexed-young-39500>
+
+## Let's talk about ...
+
+- meetings
+- getting help
+- getting more help
+
+## Meetings
+
+## Getting help
+
+```{r, child=c('toc2.md')}
+```

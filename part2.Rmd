@@ -345,13 +345,15 @@ knitr::include_url("https://social-science-data-editors.github.io/guidance/addtl
 
 ```
 
-# The processes
+<https://social-science-data-editors.github.io/guidance/addtl-data-citation-guidance.html#try-it-out>
 
-[Next](https://raw.githubusercontent.com/AEADataEditor/fireside-chat-2021/main/Vilhuber-Presentation-2021-01-19.pptx)
+
+```{r, child=c('toc2.md')}
+```
+
+```{r, child=c('lunch.md')}
+```
 
 # Command line, github
 
 [Command line notes](part4.html)
-
-```{r, child=c('toc.md')}
-```
