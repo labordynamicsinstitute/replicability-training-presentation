@@ -13,6 +13,13 @@ output:
 ```{r, child=c('toc.md')}
 ```
 
+# Basic Toolkit
+
+[LDI Lab Toolkit](https://labordynamicsinstitute.github.io/ldilab-manual/02-03-toolkit.html)
+
+- Command line
+- Git
+- Markdown
 
 # Command Line/Git & Version Control/Markdown/
 
