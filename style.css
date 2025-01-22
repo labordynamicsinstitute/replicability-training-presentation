@@ -1,14 +1,4 @@
-
-blockquote {
-border-left: 1px solid #e5e5e5;
-margin: 1em 1em 1em 1em;
-padding: 5px 0 5px 30px;
-text-indent: -10px;
-font-style: normal;
-list-style-type: none;
-background-color:#c0cbf87d;
-}
-
+/*-- scss:rules --*/
 .goodcite {
   background-color: #c7f3e47d;
 }
@@ -44,14 +34,32 @@ background-color:#c0cbf87d;
     .warning {
       background-color: #f5b3b8;
     }
-
-#author {
-      background-color: rgba(0, 0, 255, 0.24);
-    }
-
-    
-
-.reveal .slides{
-    width: 90% !important;  /* or other width */
-}
 /* end of customizations */
+
+.reveal strong {
+  color: black;
+  background-color: lemonchiffon;
+  font-weight: bolder;
+}
+
+.reveal em {
+  color: black;
+  background-color: rgb(205, 226, 255);
+  font-weight: bolder;
+}
+
+/* for this presentation only */
+
+.reveal #title-slide .title {
+  font-size: 1.3em;
+  top: 100px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.vcenter {
+  align-items: center;
+  justify-content: center;
+}

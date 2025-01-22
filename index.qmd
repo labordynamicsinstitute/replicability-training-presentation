@@ -1,0 +1,145 @@
+---
+title: "Training for LDI Replication Lab"
+author: 
+  - "Lars Vilhuber"
+date: January 2025
+title-slide-attributes:
+  data-background-image: "images/lake-winter.jpg" 
+  data-background-size: "auto 50%"
+  data-background-position: "bottom"
+---
+
+
+
+
+```{r, child=c(here::here('toc.md'))}
+```
+
+
+
+# Before we start
+
+## Survey!
+
+<img src="images/aeaintern-400.png" style="width: 400px; float: right; margin: 10px;"/>
+
+[https://tinyurl.com/aeaintern](https://tinyurl.com/aeaintern)
+
+# Overview
+
+## Overview  
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+**What you will do**
+
+- Run through the analytics behind cutting-edge econ articles
+- Assess provenance of data (and code)
+- Compile a report that will be read by young and prominent economists alike
+
+:::
+
+::: {.column width=50%}
+
+<img src="images/pexels-allan-mas-5384632.jpg" style="width: 400px; float: right; margin: 10px;" alt="Photo by Allan Mas: https://www.pexels.com/photo/sportspeople-training-on-climbing-wall-in-gym-5384632/" />
+
+:::
+
+::::
+
+
+
+
+## Overview
+
+:::: {.columns}
+
+::: {.column}
+
+**What you will learn**
+
+- How to run / debug code both easy and hard
+- Recognize your own limits
+- How to write a report that is both polite and rigorous
+- How to work with data both small and large, and maybe how to obtain it
+
+:::
+
+::: {.column}
+
+<img src="images/climber-courage-cliff-sunlight-mountain-woman-1638388-pxhere.com.jpg" style="width: 450px; float: left; margin: 10px;">
+
+:::
+
+::::
+
+
+## Overview
+
+:::: {.columns}
+
+::: {.column}
+
+**What you may NOT learn**
+
+- How to become an expert programmer
+- How to write articles in economics that are published in top journals
+- How to become a data scientist
+- How to become an expert econometrician (and find errors)
+
+:::
+
+::: {.column}
+
+<img src="images/20170713_153048.jpg" style="width: 450px; float: right; margin: 10px;" />
+
+:::
+
+::::
+
+
+## Its a journey, with a goal! {.flexbox .vcenter}
+
+<img src="images/IMG_20190615_075226.jpg" style="width: 700px; float: right; margin: 10px;" />
+
+
+
+
+## Code of Conduct {.smaller}
+
+- see [full Code of Conduct](https://labordynamicsinstitute.github.io/ldilab-manual/LDI-Replication-Lab-Code-of-Conduct.html)
+
+> We are dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this team, participants accept to abide by LDI ReplicationLab's Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved. Any form of behaviour to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all platforms and events:
+
+- Use welcoming and inclusive language
+-  Be respectful of different viewpoints and experiences
+-  Gracefully accept constructive criticism
+-  Focus on what is best for the community
+-  Show courtesy and respect towards other community members
+
+If you believe someone is violating the Code of Conduct, we ask that you report it to Cornell University
+
+## Video code of conduct
+
+Specifically, for our many Zoom meetings: [Video Code of Conduct](https://labordynamicsinstitute.github.io/ldilab-manual/Video-etiquette.html)
+
+## Privacy
+
+- Your Privacy
+- Privacy of Authors
+- Editorial secret
+
+See [Privacy Policy](https://labordynamicsinstitute.github.io/ldilab-manual/92-Privacy.html).
+
+# Next up: Reproducible practices
+
+[Reproducible practices](part1a.html)
+
+
+
+
+# Thank you {background-image="images/lake-autumn.jpg" background-size="contain" background-position="bottom"}
+
+
