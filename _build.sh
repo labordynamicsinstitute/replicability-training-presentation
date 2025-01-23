@@ -5,6 +5,7 @@ TAG=2025-01-22
 MYHUBID=larsvilhuber
 MYNAME=replicability-training-presentation
 MYIMG=$MYHUBID/${MYNAME}:${TAG}
+document=${1:-index.qmd}
 
 docker=$(which docker1 2>/dev/null)
 [[ -z $docker ]] && docker=$(which docker)
@@ -22,7 +23,7 @@ fi
 $docker run -it --rm \
   -v "$(pwd)/":/project \
   -w /project \
-  $MYIMG quarto render index.qmd
+  $MYIMG quarto render $document
 
 
 

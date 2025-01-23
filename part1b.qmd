@@ -2,11 +2,6 @@
 title: "Part 1b: Template README and Reproducible Practices"
 author: 
   - "Lars Vilhuber"
-date: "`r Sys.Date()`"
-output: 
-  ioslides_presentation:
-  incremental: false
-self-included: true
 widescreen: true
 ---
   
@@ -15,7 +10,7 @@ widescreen: true
 
 ## Overview
 
-::: {.columns-2}
+::: {.columns}
 
 :::: {.column}
 
@@ -41,13 +36,29 @@ Part 1:
 
 ## V1.1 Published in November 2022 {.smaller}
 
-```{r readmeweb,echo=FALSE}
+<https://social-science-data-editors.github.io/template_README/>
 
+
+:::: {.columns}
+
+::: {.column}
+
+> Lars Vilhuber, Connolly, M., Koren, M., Llull, J., & Morrow, P. (2022). "A template README for social science replication packages" (v1.1). *Social Science Data Editors.* [![](https://zenodo.org/badge/DOI/10.5281/zenodo.7293838.svg)](https://doi.org/10.5281/zenodo.7293838)
+
+:::
+
+::: {.column}
+
+```{r readmeweb,echo=FALSE}
+# maybe switch to webshot or grab the section from the readme presentation
 knitr::include_url("https://social-science-data-editors.github.io/template_README/")
 
 ```
+:::
 
-## Overview
+::::
+
+## Overview {.smaller}
 
 ```{r readmeweb2,echo=FALSE}
 
@@ -66,7 +77,7 @@ knitr::include_url("https://social-science-data-editors.github.io/template_READM
 - then dives into the specifics.
 
 
-## Data and Code Availability Statement (DCAS)
+## Data and Code Availability Statement (DCAS) {.smaller}
 
 ```{r readmeweb3,echo=FALSE}
 
@@ -92,7 +103,7 @@ These may include
 
 
 
-## Computational Requirements
+## Computational Requirements {.smaller}
 
 ```{r readmeweb4,echo=FALSE}
 
@@ -140,7 +151,7 @@ Important: **The information should describe ALL data used, regardless of whethe
 
 For instance, if using GDP deflators, the source of the deflators (e.g. at the national statistical office) should also be listed here.
 
-## Rights and licenses
+## Rights and licenses {.smaller}
 
 
 
@@ -156,7 +167,7 @@ knitr::include_url("https://social-science-data-editors.github.io/template_READM
 - We may obtain data as per instructions by the authors
   - At its simplest, we check that the URL works, and that the landing page provides enough information to obtain the data
   
-## Availability of data
+## Availability of data {.smaller}
 
 
 ```{r readmeweb7,echo=FALSE}
@@ -184,7 +195,7 @@ To some extent, the crux of the matter: what do you need to run the analysis?
 - Software
 - Time
 
-## Computational requirements
+## Computational requirements {.smaller}
 
 
 ```{r readmeweb8,echo=FALSE}
@@ -202,7 +213,7 @@ You will need to figure out if you can do it (we'll get to that part).
 
 > Portions of the code were last run on a 12-node AWS R3 cluster, consuming 20,000 core-hours.
 
-## The code
+## The code {.smaller}
 
 
 ```{r readmeweb9,echo=FALSE}
@@ -218,7 +229,7 @@ This should provide some details, but ideally:
 - explain summarily what the code does
 - might explain in detail what the code does
 
-## Instructions
+## Instructions {.smaller}
 
 
 ```{r readmewebA,echo=FALSE}

@@ -1,13 +1,6 @@
 ---
 title: "Command Line/Git & Version Control/Markdown/"
 author: "Linda Wang"
-date: "April 2023"
-output: 
-  ioslides_presentation:
-    incremental: false
-    css: style.css
-    self-included: true
-    widescreen: true
 ---
 
 ```{r, child=c('toc.md')}

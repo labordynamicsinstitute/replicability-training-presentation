@@ -1,3 +1,11 @@
+project:
+  output-dir: _site
+  render:
+    - "*.qmd"
+
+#toc: true
+#number-sections: true
+  
 format: 
   revealjs:
     scrollable: true
