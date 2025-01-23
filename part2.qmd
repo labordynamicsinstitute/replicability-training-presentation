@@ -2,13 +2,6 @@
 title: "Part 2: Guidance on data citations"
 author: 
   - "Lars Vilhuber"
-date: "`r Sys.Date()`"
-output: 
-  ioslides_presentation:
-    incremental: false
-    css: style.css
-    self-included: true
-    widescreen: true
 ---
   
 ```{r, child=c('toc.md')}
