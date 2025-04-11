@@ -1,7 +1,7 @@
 ## The Plan {.smaller}
 
 
-| Time  |  January 19, 2025                               |
+| Time  |  April 11, 2025                               |
 |-------|-----------------------------------------------------------|
 | 13:00 |  **What will you be doing in the Lab**                    |
 | 13:30 | [Tech break](https://labordynamicsinstitute.github.io/ldilab-manual/91-setup-checklist.html) |

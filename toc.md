@@ -1,7 +1,7 @@
 ## The Plan {.smaller}
 
 
-| Time  |  January 19, 2025                               |
+| Time  |  April 11, 2025                               |
 |-------|-----------------------------------------------------------|
 |  8:00 | Breakfast  |
 |  9:00 |  **Introduction**      |
