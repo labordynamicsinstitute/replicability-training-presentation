@@ -29,13 +29,13 @@ This slide is based on the [Carpentries tutorial on the Unix shell](https://swca
 
   - list files
 
-```
+```bash
 $ ls
 ```
 - moving around 
   - where are we (`pwd` = present working directory)
 
-```
+```bash
 $ pwd
 ```
 
@@ -43,14 +43,14 @@ $ pwd
 
 - Create directories
 
-```
+```bash
 $ mkdir somepath
 ```
 ## Commands in the Unix Shell
 
  - change to where we want to be 
 
-```
+```bash
 $ cd somepath 
 $ pwd
 $ cd ..
@@ -62,12 +62,12 @@ $ pwd
 
 - Move or rename files 
 
-```
+```bash
 $ mv somepath otherpath
 ```
 - Copy (`cp`) files
 
-```
+```bash
 $ cp test.do otherpath/
 ```
 
@@ -75,7 +75,7 @@ $ cp test.do otherpath/
 
 - Remove (`rm`) files
 
-```
+```bash
 $ rm filename.do
 ```
 
@@ -87,7 +87,7 @@ Version Control system. Track the progress in a project: what changes?, who made
 
 - Clone a repository
 
-```
+```bash
 git clone https://github.com/labordynamicsinstitute/prettygood-example
 ```
 
@@ -95,7 +95,7 @@ git clone https://github.com/labordynamicsinstitute/prettygood-example
 
 - Check where my local repository is vs. remote repository
 
-```
+```bash
 git status
 ```
 
@@ -103,7 +103,7 @@ git status
 
 - Get the current version of an existing repository
 
-```
+```bash
 git pull
 ```
 
@@ -111,7 +111,7 @@ git pull
 
 - after making changes, how to reflect them in the external repository.
 
-```
+```bash
 git add otherpath/fileimodified.do
 git add otherpath/fileicreated.do
 git commit -m "you write here a commit message"
@@ -128,7 +128,7 @@ We use Markdown to write reports. [why?](https://carto.com/blog/why-we-use-markd
 
 ### Headings
 
-```
+```markdown
 # Heading level 1
 ## Heading level 2
 ### Heading level 3
@@ -142,7 +142,7 @@ We use Markdown to write reports. [why?](https://carto.com/blog/why-we-use-markd
 
 #### Ordered lists
 
-```
+```markdown
 1. First item
 2. Second item
 3. Third item
@@ -157,7 +157,7 @@ We use Markdown to write reports. [why?](https://carto.com/blog/why-we-use-markd
 
 #### Unordered lists
 
-```
+```markdown
 - First item
 - Second item
 - Third item
@@ -174,7 +174,7 @@ We use Markdown to write reports. [why?](https://carto.com/blog/why-we-use-markd
 
 > This is a block quote, and it is created like this
 
-```
+```markdown
 > This is a block quote, and it is created like this
 
 ```
@@ -187,13 +187,13 @@ We use Markdown to write reports. [why?](https://carto.com/blog/why-we-use-markd
 
 Code embedded in the document:
 
-```
- "```"
+````markdown
+ ```
  gen var1= var2/var3
  
- "```" 
+ ``` 
 
-```
+````
 
 ---
 
@@ -201,7 +201,7 @@ Code embedded in the document:
 
 - Be sure to leave an empty line after a header.
 
-```
+```markdown
 ### Bad example
 #### U.S.Census Population Division
 - Retrieved from https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html
@@ -211,7 +211,7 @@ Code embedded in the document:
 
 ### Spacing
 
-```
+```markdown
 ### Good example
 
 #### U.S.Census Population Division
@@ -224,12 +224,14 @@ Code embedded in the document:
 ### Spacing
 
 - Leave an empty line if you want to start a new paragraph.
-```
+
+```markdown
 Bad example:
 Thank you for your replication archive.Blablabla.
 **Conditional on making the requested changes to the manuscript and the openICPSR deposit prior to publication, the replication package is accepted.**
 ```
-```
+
+```markdown
 Good example:
 
 Thank you for your replication archive. Blablabla.
