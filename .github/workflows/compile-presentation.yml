@@ -43,6 +43,7 @@ jobs:
     #     path: ./presentation
       run: |
         quarto render  index.qmd --output-dir _html
+        quarto render  fulltoc.qmd --output-dir _html
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3.0.1    
