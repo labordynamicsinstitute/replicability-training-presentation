@@ -2,12 +2,6 @@
 title: "Part 1: Template README and Reproducible Practices"
 author: 
   - "Lars Vilhuber"
-date: "`r Sys.Date()`"
-output: 
-  ioslides_presentation:
-    incremental: false
-    self-included: true
-    widescreen: true
 ---
 
 ```{r, child=c('toc.md')}
@@ -15,7 +9,7 @@ output:
 
 ## Overview
 
-::: {.columns-2}
+::: {.columns}
 
 :::: {.column}
 
@@ -59,9 +53,9 @@ Here's a few generic guidelines for researchers. You will be on the lookout for 
 ![TIER protocol](images/tier-protocol.png)
 [TIER Protocol](https://www.projecttier.org/tier-protocol/specifications-3-0/)
 
-## Basic project setup {#user}
+## Basic project setup 
 
-::: {.columns-2}
+::: {.columns}
 
 :::: {.column}
 
@@ -88,10 +82,10 @@ Here's a few generic guidelines for researchers. You will be on the lookout for 
 
 :::
 
-## Project setup examples {#user}
+## Project setup examples 
 
 
-::: {.columns-2}
+::: {.columns}
 
 :::: {.column}
 
@@ -123,7 +117,7 @@ It doesn't really matter, as long as it is logical. We will get to how this tran
 
 # Computational Empathy
 
-## Consider how the next person will (be able to) compute {#user}
+## Consider how the next person will (be able to) compute 
 
 - You don't know who that is
 - You don't know what they don't know
@@ -132,11 +126,11 @@ It doesn't really matter, as long as it is logical. We will get to how this tran
 
 **It might be "Future You!"**
 
-## It *IS* you {#user}
+## It *IS* you 
 
 The replicator is the first (?) reader of the instructions who will need to reproduce the analysis.
 
-## Streamlining {#user}
+## Streamlining 
 
 - Master script preferred
   - Least amount of manual effort
@@ -147,38 +141,38 @@ The replicator is the first (?) reader of the instructions who will need to repr
 - No manual install of packages
   - Use a script to create all directories, install all necessary packages/requirements/etc.
 
-## Reproducibility {#user}
+## Reproducibility 
 
 - No manual manipulation 
   - “Change the parameter to 0.2, then run the code again”
   - Use *functions*, ado files, programs, macros, subroutines
   - Use *loops*, parameters, *parameter files* to call those subroutines
-  - Use *placeholders* (globals, macros, libnames, etc.) for common locations ($CONFDATA, $TABLES, $CODE)
+  - Use *placeholders* (globals, macros, libnames, etc.) for common locations (`$CONFDATA, $TABLES, $CODE`)
 - Compute all numbers in package
   - No manual calculation of numbers
 - Use cross-platform programming practices
 
-## Cross-platform programming practices 1 {#user}
+## Cross-platform programming practices 1 
 
 **Use programming-language specific code as much as possible**
 
 Avoid
-```{r, eval=FALSE}
+```{.r}
 system("unzip C:\data\myfile.zip")
 ```
 or
-```{stata, eval=FALSE}
+```{.stata}
 shell unzip "C:\data\myfile.zip"
 ```
 
 
-## Cross-platform programming practices 1  {#user}
+## Cross-platform programming practices 1  
 
 Most languages have appropriate code:
 
 R:
 
-```{r, eval=FALSE}
+```{.r}
 unzip(zipfile, files = NULL, list = FALSE, overwrite = TRUE,
       junkpaths = FALSE, exdir = ".", unzip = "internal",
       setTimes = FALSE)
@@ -186,16 +180,16 @@ unzip(zipfile, files = NULL, list = FALSE, overwrite = TRUE,
 
 Stata:
 
-```{stata, eval=FALSE}
+```{.stata}
 unzipfile "zipfile.zip" [, replace]
 ```
 
 
-## Cross-platform programming practices 2 {#user}
+## Cross-platform programming practices 2 
 
 Use neutral pathnames (mostly forward slashes)
 
-::: {.columns-2}
+::: {.columns}
 
 
 :::: {.column}
@@ -258,7 +252,7 @@ use "$data/path/data.dta"
 ## Project setup examples
 
 
-::: {.columns-2}
+::: {.columns}
 
 :::: {.column}
 
@@ -303,7 +297,7 @@ But this might
 
 File structure thus becomes more complex, but fundamentally not so different:
 
-```{stata, eval=FALSE}
+```{.stata}
 global taxdata    "/confidential/taxes"  
 global salarydata "/confidential/wages"  
 global outputdata "/project/data/clean" // this is where you would write the data you create in this project
@@ -317,7 +311,7 @@ global programs   "/project/code"       // All programs (which you might "includ
 
 Or even more robust:
 
-```{stata, eval=FALSE}
+```{.stata}
 global basedir     "/project123"
 global confbase    "/data/provided"
 global project     "$basedir/project"

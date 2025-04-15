@@ -2,15 +2,48 @@
 title: "Training for LDI Replication Lab"
 author: 
   - "Lars Vilhuber"
-date: January 2025
-output: 
-  ioslides_presentation:
-    incremental: false
-    self-included: true
-    widescreen: true
+date: April 2025
+title-slide-attributes:
+  data-background-image: "images/lake-winter.jpg" 
+  data-background-size: "auto 50%"
+  data-background-position: "bottom"
 ---
 
-```{r, child=c('toc.md')}
+
+
+
+```{r, child=c(here::here('toc.md'))}
+```
+
+
+```{r config,include=FALSE}
+library(qrcode)
+
+# The repository name
+
+message(Sys.getenv("GITHUB_REPOSITORY"))
+
+# Process the repository name to generate the URL
+# - split the two components
+# - combine them into a URL with 'github.io' in the middle
+
+GITHUB_REPOSITORY <- Sys.getenv("GITHUB_REPOSITORY")
+GITHUB_REPOSITORY_PARTS <- strsplit(GITHUB_REPOSITORY, "/")[[1]]
+REPOSITORY_URL <- paste0("https://github.com/", GITHUB_REPOSITORY)
+WEBSITE_URL <- paste0("https://", GITHUB_REPOSITORY_PARTS[1], ".github.io/", GITHUB_REPOSITORY_PARTS[2])
+WEBSITE_NAME <- paste0(GITHUB_REPOSITORY_PARTS[1], ".github.io/", GITHUB_REPOSITORY_PARTS[2])
+
+```
+
+
+## Follow along
+
+```{r qrcode}
+#| echo: false
+
+code <- qr_code(WEBSITE_URL)
+plot(code)
+
 ```
 
 
@@ -24,8 +57,11 @@ output:
 
 # Overview
 
-## Overview   {.columns-2}
+## Overview  
 
+:::: {.columns}
+
+::: {.column width=50%}
 
 **What you will do**
 
@@ -33,17 +69,24 @@ output:
 - Assess provenance of data (and code)
 - Compile a report that will be read by young and prominent economists alike
 
+:::
+
+::: {.column width=50%}
 
 <img src="images/pexels-allan-mas-5384632.jpg" style="width: 400px; float: right; margin: 10px;" alt="Photo by Allan Mas: https://www.pexels.com/photo/sportspeople-training-on-climbing-wall-in-gym-5384632/" />
 
+:::
+
+::::
 
 
 
 
-## Overview {.columns-2 }
+## Overview
 
+:::: {.columns}
 
-
+::: {.column}
 
 **What you will learn**
 
@@ -52,12 +95,22 @@ output:
 - How to write a report that is both polite and rigorous
 - How to work with data both small and large, and maybe how to obtain it
 
+:::
+
+::: {.column}
 
 <img src="images/climber-courage-cliff-sunlight-mountain-woman-1638388-pxhere.com.jpg" style="width: 450px; float: left; margin: 10px;">
 
+:::
+
+::::
 
 
-## Overview  {.columns-2}
+## Overview
+
+:::: {.columns}
+
+::: {.column}
 
 **What you may NOT learn**
 
@@ -66,7 +119,15 @@ output:
 - How to become a data scientist
 - How to become an expert econometrician (and find errors)
 
+:::
+
+::: {.column}
+
 <img src="images/20170713_153048.jpg" style="width: 450px; float: right; margin: 10px;" />
+
+:::
+
+::::
 
 
 ## Its a journey, with a goal! {.flexbox .vcenter}
@@ -106,3 +167,11 @@ See [Privacy Policy](https://labordynamicsinstitute.github.io/ldilab-manual/92-P
 
 [Reproducible practices](part1a.html)
 
+
+
+
+# Thank you {background-image="images/lake-autumn.jpg" background-size="contain" background-position="bottom"}
+
+<br />
+
+<br />
