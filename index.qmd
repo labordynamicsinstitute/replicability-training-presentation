@@ -2,7 +2,7 @@
 title: "Training for LDI Replication Lab"
 author: 
   - "Lars Vilhuber"
-date: April 2025
+date: 22 August 2025
 title-slide-attributes:
   data-background-image: "images/lake-winter.jpg" 
   data-background-size: "auto 50%"
@@ -46,14 +46,6 @@ plot(code)
 
 ```
 
-
-# Before we start
-
-## Survey!
-
-<img src="images/aeaintern-400.png" style="width: 400px; float: right; margin: 10px;"/>
-
-[https://tinyurl.com/aeaintern](https://tinyurl.com/aeaintern)
 
 # Overview
 
