@@ -347,6 +347,6 @@ knitr::include_url("https://social-science-data-editors.github.io/guidance/addtl
 ```{r, child=c('lunch.md')}
 ```
 
-# Command line, github
+# Command line, Git, Markdown
 
 [Command line notes](part4.html)
