@@ -2,7 +2,7 @@
 title: "Training for LDI Replication Lab"
 author: 
   - "Lars Vilhuber"
-date: 22 August 2025
+date: 16 January 2026
 title-slide-attributes:
   data-background-image: "images/lake-winter.jpg" 
   data-background-size: "auto 50%"
