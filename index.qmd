@@ -184,7 +184,9 @@ plot(code3)
 
 ```
 
+# World Bank reproducibility
 
+[Presentation](WB_Intro_AEA_training.pdf)
 
 # Next up: Reproducible practices
 
