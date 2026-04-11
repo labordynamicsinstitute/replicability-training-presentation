@@ -2,7 +2,7 @@
 title: "Training for LDI Replication Lab"
 author: 
   - "Lars Vilhuber"
-date: 16 January 2026
+date: 11 April 2026
 title-slide-attributes:
   data-background-image: "images/lake-winter.jpg" 
   data-background-size: "auto 50%"
@@ -13,6 +13,10 @@ title-slide-attributes:
 
 
 ```{r, child=c(here::here('toc.md'))}
+```
+
+
+```{r, child=c(here::here('toc2.md'))}
 ```
 
 
@@ -32,6 +36,9 @@ GITHUB_REPOSITORY_PARTS <- strsplit(GITHUB_REPOSITORY, "/")[[1]]
 REPOSITORY_URL <- paste0("https://github.com/", GITHUB_REPOSITORY)
 WEBSITE_URL <- paste0("https://", GITHUB_REPOSITORY_PARTS[1], ".github.io/", GITHUB_REPOSITORY_PARTS[2])
 WEBSITE_NAME <- paste0(GITHUB_REPOSITORY_PARTS[1], ".github.io/", GITHUB_REPOSITORY_PARTS[2])
+
+QUALTRICS_SURVEY_URL <- "https://cornell.ca1.qualtrics.com/jfe/form/SV_9KRgKmk6CeC4VTM"
+QUALTRICS_CODE_OF_CONDUCT_URL <- "https://cornell.ca1.qualtrics.com/jfe/form/SV_afKXXGaWArqhuyG"
 
 ```
 
@@ -127,6 +134,16 @@ plot(code)
 <img src="images/IMG_20190615_075226.jpg" style="width: 700px; float: right; margin: 10px;" />
 
 
+## But first, a few questions {.flexbox .vcenter}
+
+```{r qrcode2}
+#| echo: false
+
+code2 <- qr_code(QUALTRICS_SURVEY_URL)
+plot(code2)
+
+```
+
 
 
 ## Code of Conduct {.smaller}
@@ -154,6 +171,19 @@ Specifically, for our many Zoom meetings: [Video Code of Conduct](https://labord
 - Editorial secret
 
 See [Privacy Policy](https://labordynamicsinstitute.github.io/ldilab-manual/92-Privacy.html).
+
+
+## Please confirm {.flexbox .vcenter}
+
+```{r qrcode3}
+#| echo: false
+
+code3 <- qr_code(QUALTRICS_CODE_OF_CONDUCT_URL)
+plot(code3)
+
+```
+
+
 
 # Next up: Reproducible practices
 
