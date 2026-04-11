@@ -27,9 +27,13 @@ fi
 # override
 [[ "$arg1" == "force" ]] && BUILD=yes
 
-if [[ "$BUILD" == "yes" ]]; then
-DOCKER_BUILDKIT=1 docker build . -t $dockerspace/$repo
-nohup docker push $dockerspace/$repo &
+
+# map the local .cache folder to the docker container, so that we don't have to redownload all the packages every time
+if [[ ! -d $PWD/.cache ]]
+then
+  mkdir $PWD/.cache
 fi
 
-docker run -e DISABLE_AUTH=true  -v $WORKSPACE:/home/rstudio/project --rm --name rstudio -p 8787:8787 $dockerspace/$repo
+CACHE="-v $PWD/.cache:/home/rstudio/.cache"
+
+docker run -e DISABLE_AUTH=true  -v $WORKSPACE:/home/rstudio/project $CACHE --rm --name rstudio -p 8787:8787 $dockerspace/$repo

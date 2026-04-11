@@ -9,3 +9,5 @@ index_files
 index.html
 .Rhistory
 _site
+.cache
+_html

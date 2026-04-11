@@ -105,7 +105,7 @@ plot(code)
 ::::
 
 
-## Overview
+## Overview {.smaller}
 
 :::: {.columns}
 
@@ -113,10 +113,11 @@ plot(code)
 
 **What you may NOT learn**
 
-- How to become an expert programmer
-- How to write articles in economics that are published in top journals
-- How to become a data scientist
-- How to become an expert econometrician (and find errors)
+- How to become 
+  - an expert programmer
+  - a data scientist
+  - an expert econometrician (and find errors)
+- How to write articles in economics for top journals
 
 :::
 
